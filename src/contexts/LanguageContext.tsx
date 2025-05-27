@@ -30,32 +30,22 @@ const translations = {
     'home.cta.ready': 'Prêt à optimiser votre infrastructure IT ?',
     'home.cta.discuss': 'Discutons de la façon dont mon expertise peut aider votre entreprise à prospérer dans le paysage numérique actuel.',
     
-    // Projects Page
-    'projects.title': 'Mes Projets',
-    'projects.subtitle': 'Découvrez mes réalisations en administration système et réseau',
-    'projects.category.all': 'Tous les Projets',
-    'projects.viewDetails': 'Voir les détails',
-    'projects.noResults': 'Aucun projet trouvé dans cette catégorie.',
+    // Skills
+    'skills.title': 'Compétences Techniques',
     
-    // Contact Page
-    'contact.title': 'Contact',
-    'contact.subtitle': 'Vous avez un projet en tête ou besoin d\'assistance IT ? Parlons-en !',
-    'contact.form.name': 'Nom',
-    'contact.form.email': 'Email',
-    'contact.form.subject': 'Sujet',
-    'contact.form.message': 'Message',
-    'contact.form.send': 'Envoyer',
-    'contact.info.title': 'Coordonnées',
-    'contact.success': 'Merci pour votre message ! Je vous répondrai dans les plus brefs délais.',
-    
-    // Tech Watch Page
-    'techWatch.title': 'Veille Technologique',
-    'techWatch.subtitle': 'Restez informé des dernières tendances en administration système et réseau',
-    'techWatch.search': 'Rechercher des articles...',
-    'techWatch.categories': 'Catégories',
-    'techWatch.readMore': 'Lire la suite',
-    'techWatch.noResults': 'Aucun article trouvé correspondant à vos critères.',
-    'techWatch.resetFilters': 'Réinitialiser les filtres',
+    // Services
+    'services.serverManagement': 'Gestion de Serveurs',
+    'services.serverManagementDesc': 'Gestion experte des serveurs Windows et Linux, assurant performance et fiabilité optimales.',
+    'services.networkInfra': 'Infrastructure Réseau',
+    'services.networkInfraDesc': 'Conception, implémentation et maintenance d\'infrastructures réseau robustes.',
+    'services.security': 'Solutions de Sécurité',
+    'services.securityDesc': 'Solutions de sécurité complètes pour protéger vos systèmes et données contre les menaces.',
+    'services.dataManagement': 'Gestion des Données',
+    'services.dataManagementDesc': 'Solutions efficaces de gestion des données, incluant sauvegarde, récupération et optimisation du stockage.',
+    'services.monitoring': 'Surveillance Système',
+    'services.monitoringDesc': 'Surveillance proactive des systèmes pour prévenir les problèmes avant qu\'ils n\'impactent votre activité.',
+    'services.virtualization': 'Virtualisation',
+    'services.virtualizationDesc': 'Implémentation de solutions de virtualisation pour maximiser l\'efficacité et la flexibilité du matériel.',
   },
   en: {
     // Navigation
@@ -78,32 +68,22 @@ const translations = {
     'home.cta.ready': 'Ready to optimize your IT infrastructure?',
     'home.cta.discuss': 'Let\'s discuss how my expertise can help your business thrive in today\'s digital landscape.',
     
-    // Projects Page
-    'projects.title': 'My Projects',
-    'projects.subtitle': 'Explore my system and network administration achievements',
-    'projects.category.all': 'All Projects',
-    'projects.viewDetails': 'View Details',
-    'projects.noResults': 'No projects found in this category.',
+    // Skills
+    'skills.title': 'Technical Skills',
     
-    // Contact Page
-    'contact.title': 'Contact',
-    'contact.subtitle': 'Have a project in mind or need IT infrastructure assistance? Let\'s talk!',
-    'contact.form.name': 'Name',
-    'contact.form.email': 'Email',
-    'contact.form.subject': 'Subject',
-    'contact.form.message': 'Message',
-    'contact.form.send': 'Send Message',
-    'contact.info.title': 'Contact Information',
-    'contact.success': 'Thank you for your message! I\'ll get back to you as soon as possible.',
-    
-    // Tech Watch Page
-    'techWatch.title': 'Tech Watch',
-    'techWatch.subtitle': 'Stay updated with the latest trends in system and network administration',
-    'techWatch.search': 'Search articles...',
-    'techWatch.categories': 'Categories',
-    'techWatch.readMore': 'Read More',
-    'techWatch.noResults': 'No articles found matching your criteria.',
-    'techWatch.resetFilters': 'Reset Filters',
+    // Services
+    'services.serverManagement': 'Server Management',
+    'services.serverManagementDesc': 'Expert management of Windows and Linux servers, ensuring optimal performance and reliability.',
+    'services.networkInfra': 'Network Infrastructure',
+    'services.networkInfraDesc': 'Design, implementation, and maintenance of robust network infrastructures.',
+    'services.security': 'Security Solutions',
+    'services.securityDesc': 'Comprehensive security solutions to protect your systems and data from threats.',
+    'services.dataManagement': 'Data Management',
+    'services.dataManagementDesc': 'Efficient data management solutions, including backup, recovery, and storage optimization.',
+    'services.monitoring': 'System Monitoring',
+    'services.monitoringDesc': 'Proactive monitoring of systems to prevent issues before they impact your business.',
+    'services.virtualization': 'Virtualization',
+    'services.virtualizationDesc': 'Implementation of virtualization solutions to maximize hardware efficiency and flexibility.',
   }
 };
 

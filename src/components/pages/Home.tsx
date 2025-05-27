@@ -6,8 +6,11 @@ import Card from '../common/Card';
 import Button from '../common/Button';
 import SectionDivider from '../common/SectionDivider';
 import ProgressBar from '../common/ProgressBar';
+import { useLanguage } from '../../contexts/LanguageContext';
 
 const Home = () => {
+  const { t } = useLanguage();
+
   const skills = [
     { name: 'Network Infrastructure', percentage: 95 },
     { name: 'Linux Administration', percentage: 90 },
@@ -22,33 +25,33 @@ const Home = () => {
   const services = [
     {
       icon: <Server className="w-10 h-10 text-blue-600" />,
-      title: 'Server Management',
-      description: 'Expert management of Windows and Linux servers, ensuring optimal performance and reliability.'
+      title: t('services.serverManagement'),
+      description: t('services.serverManagementDesc')
     },
     {
       icon: <Network className="w-10 h-10 text-blue-600" />,
-      title: 'Network Infrastructure',
-      description: 'Design, implementation, and maintenance of robust network infrastructures.'
+      title: t('services.networkInfra'),
+      description: t('services.networkInfraDesc')
     },
     {
       icon: <Shield className="w-10 h-10 text-blue-600" />,
-      title: 'Security Solutions',
-      description: 'Comprehensive security solutions to protect your systems and data from threats.'
+      title: t('services.security'),
+      description: t('services.securityDesc')
     },
     {
       icon: <Database className="w-10 h-10 text-blue-600" />,
-      title: 'Data Management',
-      description: 'Efficient data management solutions, including backup, recovery, and storage optimization.'
+      title: t('services.dataManagement'),
+      description: t('services.dataManagementDesc')
     },
     {
       icon: <Monitor className="w-10 h-10 text-blue-600" />,
-      title: 'System Monitoring',
-      description: 'Proactive monitoring of systems to prevent issues before they impact your business.'
+      title: t('services.monitoring'),
+      description: t('services.monitoringDesc')
     },
     {
       icon: <Cpu className="w-10 h-10 text-blue-600" />,
-      title: 'Virtualization',
-      description: 'Implementation of virtualization solutions to maximize hardware efficiency and flexibility.'
+      title: t('services.virtualization'),
+      description: t('services.virtualizationDesc')
     }
   ];
 
@@ -70,7 +73,7 @@ const Home = () => {
               animate={{ y: 0, opacity: 1 }}
               transition={{ duration: 0.5, delay: 0.2 }}
             >
-              System & Network <span className="text-blue-400">Administration</span> Expert
+              {t('home.title')}
             </motion.h1>
             <motion.p 
               className="text-xl mb-8 text-slate-200"
@@ -78,7 +81,7 @@ const Home = () => {
               animate={{ y: 0, opacity: 1 }}
               transition={{ duration: 0.5, delay: 0.4 }}
             >
-              Building robust, secure, and scalable infrastructure solutions for modern enterprises.
+              {t('home.subtitle')}
             </motion.p>
             <motion.div 
               className="flex flex-col sm:flex-row gap-4 justify-center"
@@ -87,11 +90,11 @@ const Home = () => {
               transition={{ duration: 0.5, delay: 0.6 }}
             >
               <Link to="/projects">
-                <Button size="lg" variant="primary">View My Projects</Button>
+                <Button size="lg" variant="primary">{t('home.cta.projects')}</Button>
               </Link>
               <Link to="/contact">
                 <Button size="lg" variant="outline" className="text-white border-white hover:bg-white/10">
-                  Contact Me
+                  {t('home.cta.contact')}
                 </Button>
               </Link>
             </motion.div>
@@ -119,19 +122,19 @@ const Home = () => {
             viewport={{ once: true }}
             transition={{ duration: 0.5 }}
           >
-            <h2 className="text-3xl font-bold text-slate-800 dark:text-white mb-4">About Me</h2>
+            <h2 className="text-3xl font-bold text-slate-800 dark:text-white mb-4">{t('home.about.title')}</h2>
             <p className="text-slate-600 dark:text-slate-300 mb-6">
-              With over 8 years of experience in system and network administration, I specialize in designing, implementing, and maintaining robust IT infrastructure solutions for businesses of all sizes.
+              {t('home.about.description1')}
             </p>
             <p className="text-slate-600 dark:text-slate-300 mb-6">
-              My expertise spans across Windows and Linux environments, virtualization technologies, network security, cloud services, and automation. I'm passionate about implementing efficient systems that enhance business operations while ensuring maximum security and reliability.
+              {t('home.about.description2')}
             </p>
             <p className="text-slate-600 dark:text-slate-300 mb-6">
-              I believe in staying ahead of the technology curve, continuously learning and adapting to new tools and methodologies to provide the best solutions for modern business challenges.
+              {t('home.about.description3')}
             </p>
             <Link to="/contact">
               <Button variant="primary" icon={<ArrowRight size={16} />}>
-                Get in Touch
+                {t('home.cta.contact')}
               </Button>
             </Link>
           </motion.div>
@@ -143,7 +146,7 @@ const Home = () => {
             transition={{ duration: 0.5, delay: 0.2 }}
             className="bg-white dark:bg-slate-800 rounded-lg shadow-md p-6"
           >
-            <h3 className="text-xl font-semibold text-slate-800 dark:text-white mb-4">Technical Skills</h3>
+            <h3 className="text-xl font-semibold text-slate-800 dark:text-white mb-4">{t('skills.title')}</h3>
             <div className="space-y-4">
               {skills.map((skill) => (
                 <ProgressBar
@@ -161,8 +164,8 @@ const Home = () => {
       
       {/* Services Section */}
       <Section 
-        title="Services" 
-        subtitle="Comprehensive system and network solutions to optimize your business infrastructure"
+        title={t('home.services.title')}
+        subtitle={t('home.services.subtitle')}
         className="bg-white dark:bg-slate-800"
       >
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -196,7 +199,7 @@ const Home = () => {
             transition={{ duration: 0.5 }}
             className="text-3xl font-bold mb-4"
           >
-            Ready to optimize your IT infrastructure?
+            {t('home.cta.ready')}
           </motion.h2>
           <motion.p
             initial={{ opacity: 0, y: 20 }}
@@ -205,7 +208,7 @@ const Home = () => {
             transition={{ duration: 0.5, delay: 0.2 }}
             className="text-xl text-blue-100 mb-8 max-w-2xl mx-auto"
           >
-            Let's discuss how my system and network administration expertise can help your business thrive in today's digital landscape.
+            {t('home.cta.discuss')}
           </motion.p>
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -215,7 +218,7 @@ const Home = () => {
           >
             <Link to="/contact">
               <Button size="lg" className="bg-white text-blue-800 hover:bg-blue-100">
-                Contact Me
+                {t('home.cta.contact')}
               </Button>
             </Link>
           </motion.div>
