@@ -34,9 +34,9 @@ const Header = () => {
   }, []);
 
   const navLinks = [
-    { to: '/', label: 'Home' },
-    { to: '/projects', label: 'Projects' },
-    { to: '/tech-watch', label: 'Tech Watch' },
+    { to: '/', label: 'Accueil' },
+    { to: '/projects', label: 'Projets' },
+    { to: '/tech-watch', label: 'Veille Techno' },
     { to: '/contact', label: 'Contact' }
   ];
 
@@ -58,11 +58,10 @@ const Header = () => {
                 ? 'text-white dark:text-white' 
                 : 'text-slate-800 dark:text-white'
           }`}>
-            NetAdmin
+            AdminSys
           </span>
         </Link>
         
-        {/* Desktop Menu */}
         <nav className="hidden md:flex items-center space-x-8">
           {navLinks.map((link) => (
             <Link
@@ -82,18 +81,17 @@ const Header = () => {
           <button
             onClick={toggleTheme}
             className="p-2 rounded-full bg-slate-200 dark:bg-slate-700 text-slate-700 dark:text-slate-200"
-            aria-label="Toggle theme"
+            aria-label="Changer le thème"
           >
             {theme === 'dark' ? <Sun size={20} /> : <Moon size={20} />}
           </button>
         </nav>
         
-        {/* Mobile Menu Button */}
         <div className="md:hidden flex items-center">
           <button
             onClick={toggleTheme}
             className="p-2 mr-2 rounded-full bg-slate-200 dark:bg-slate-700 text-slate-700 dark:text-slate-200"
-            aria-label="Toggle theme"
+            aria-label="Changer le thème"
           >
             {theme === 'dark' ? <Sun size={20} /> : <Moon size={20} />}
           </button>
@@ -113,7 +111,6 @@ const Header = () => {
         </div>
       </div>
       
-      {/* Mobile Menu */}
       {isMenuOpen && (
         <motion.div 
           className="md:hidden bg-white dark:bg-slate-800 shadow-lg"
