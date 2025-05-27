@@ -9,12 +9,12 @@ import Contact from './components/pages/Contact';
 import TechWatch from './components/pages/TechWatch';
 import ScrollToTop from './components/utils/ScrollToTop';
 import { ThemeProvider } from './contexts/ThemeContext';
+import { LanguageProvider } from './contexts/LanguageContext';
 
 function App() {
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
-    // Simulate loading time
     const timer = setTimeout(() => {
       setIsLoading(false);
     }, 1000);
@@ -31,23 +31,23 @@ function App() {
   }
 
   return (
-    <ThemeProvider>
-      <Router>
-        <ScrollToTop />
-        <Layout>
-          <AnimatePresence mode="wait">
-            <Routes>
-              <Route path="/" element={<Home />} />
-              <Route path="/projects" element={<Projects />} />
-              <Route path="/projects/:id" element={<ProjectDetail />} />
-              <Route path="/contact" element={<Contact />} />
-              <Route path="/tech-watch" element={<TechWatch />} />
-            </Routes>
-          </AnimatePresence>
-        </Layout>
-      </Router>
-    </ThemeProvider>
+    <LanguageProvider>
+      <ThemeProvider>
+        <Router>
+          <ScrollToTop />
+          <Layout>
+            <AnimatePresence mode="wait">
+              <Routes>
+                <Route path="/" element={<Home />} />
+                <Route path="/projects" element={<Projects />} />
+                <Route path="/projects/:id" element={<ProjectDetail />} />
+                <Route path="/contact" element={<Contact />} />
+                <Route path="/tech-watch" element={<TechWatch />} />
+              </Routes>
+            </AnimatePresence>
+          </Layout>
+        </Router>
+      </ThemeProvider>
+    </LanguageProvider>
   );
 }
-
-export default App;

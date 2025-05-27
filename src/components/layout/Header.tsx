@@ -1,14 +1,16 @@
 import { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { Menu, X, Server, Moon, Sun } from 'lucide-react';
+import { Menu, X, Server, Moon, Sun, Languages } from 'lucide-react';
 import { motion } from 'framer-motion';
 import { useTheme } from '../../contexts/ThemeContext';
+import { useLanguage } from '../../contexts/LanguageContext';
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
   const location = useLocation();
   const { theme, toggleTheme } = useTheme();
+  const { language, toggleLanguage, t } = useLanguage();
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
@@ -34,10 +36,10 @@ const Header = () => {
   }, []);
 
   const navLinks = [
-    { to: '/', label: 'Accueil' },
-    { to: '/projects', label: 'Projets' },
-    { to: '/tech-watch', label: 'Veille Techno' },
-    { to: '/contact', label: 'Contact' }
+    { to: '/', label: t('nav.home') },
+    { to: '/projects', label: t('nav.projects') },
+    { to: '/tech-watch', label: t('nav.techWatch') },
+    { to: '/contact', label: t('nav.contact') }
   ];
 
   return (
@@ -79,6 +81,13 @@ const Header = () => {
             </Link>
           ))}
           <button
+            onClick={toggleLanguage}
+            className="p-2 rounded-full bg-slate-200 dark:bg-slate-700 text-slate-700 dark:text-slate-200"
+            aria-label="Changer la langue"
+          >
+            <Languages size={20} />
+          </button>
+          <button
             onClick={toggleTheme}
             className="p-2 rounded-full bg-slate-200 dark:bg-slate-700 text-slate-700 dark:text-slate-200"
             aria-label="Changer le thème"
@@ -88,6 +97,13 @@ const Header = () => {
         </nav>
         
         <div className="md:hidden flex items-center">
+          <button
+            onClick={toggleLanguage}
+            className="p-2 mr-2 rounded-full bg-slate-200 dark:bg-slate-700 text-slate-700 dark:text-slate-200"
+            aria-label="Changer la langue"
+          >
+            <Languages size={20} />
+          </button>
           <button
             onClick={toggleTheme}
             className="p-2 mr-2 rounded-full bg-slate-200 dark:bg-slate-700 text-slate-700 dark:text-slate-200"
