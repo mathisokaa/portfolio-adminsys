@@ -5,6 +5,7 @@ import { Link } from 'react-router-dom';
 import Section from '../common/Section';
 import Card from '../common/Card';
 import Button from '../common/Button';
+import { useLanguage } from '../../contexts/LanguageContext';
 
 interface Project {
   id: number;
@@ -18,6 +19,7 @@ interface Project {
 
 const Projects = () => {
   const [filter, setFilter] = useState<string>('all');
+  const { t } = useLanguage();
   
   const projects: Project[] = [
     {
@@ -71,14 +73,14 @@ const Projects = () => {
   ];
   
   const categories = [
-    { id: 'all', name: 'All Projects' },
-    { id: 'networking', name: 'Networking' },
-    { id: 'security', name: 'Security' },
-    { id: 'cloud', name: 'Cloud' },
-    { id: 'virtualization', name: 'Virtualization' },
-    { id: 'automation', name: 'Automation' },
-    { id: 'monitoring', name: 'Monitoring' },
-    { id: 'optimization', name: 'Optimization' }
+    { id: 'all', name: t('projects.allProjects') },
+    { id: 'networking', name: t('category.networking') },
+    { id: 'security', name: t('category.security') },
+    { id: 'cloud', name: t('category.cloud') },
+    { id: 'virtualization', name: t('category.virtualization') },
+    { id: 'automation', name: t('category.automation') },
+    { id: 'monitoring', name: t('category.monitoring') },
+    { id: 'optimization', name: t('category.optimization') }
   ];
   
   const filteredProjects = filter === 'all' 
@@ -88,8 +90,8 @@ const Projects = () => {
   return (
     <>
       <Section
-        title="My Projects"
-        subtitle="Explore my recent system and network administration projects"
+        title={t('projects.title')}
+        subtitle={t('projects.subtitle')}
         className="pt-32 bg-slate-50 dark:bg-slate-900"
       >
         {/* Filter Controls */}
@@ -145,7 +147,7 @@ const Projects = () => {
                           className="flex items-center text-xs bg-blue-100 text-blue-800 dark:bg-blue-900 dark:text-blue-200 px-2 py-1 rounded-full"
                         >
                           <Tag className="w-3 h-3 mr-1" />
-                          {cat.charAt(0).toUpperCase() + cat.slice(1)}
+                          {t(`category.${cat}`)}
                         </div>
                       ))}
                       {project.category.length > 2 && (
@@ -161,7 +163,7 @@ const Projects = () => {
                           size="sm" 
                           className="w-full justify-center"
                         >
-                          View Details
+                          {t('projects.viewDetails')}
                         </Button>
                       </Link>
                       {project.link && (
@@ -184,7 +186,16 @@ const Projects = () => {
         
         {filteredProjects.length === 0 && (
           <div className="text-center py-20">
-            <h3 className="text-xl text-slate-600 dark:text-slate-300">No projects found in this category.</h3>
+            <h3 className="text-xl text-slate-600 dark:text-slate-300">{t('projects.noProjects')}</h3>
+            <Button 
+              variant="primary"
+              onClick={() => {
+                setFilter('all');
+              }}
+              className="mt-4"
+            >
+              {t('projects.resetFilters')}
+            </Button>
           </div>
         )}
       </Section>
