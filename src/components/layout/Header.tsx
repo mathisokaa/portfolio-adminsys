@@ -83,7 +83,7 @@ const Header = () => {
           <button
             onClick={toggleLanguage}
             className="p-2 rounded-full bg-slate-200 dark:bg-slate-700 text-slate-700 dark:text-slate-200"
-            aria-label="Changer la langue"
+            aria-label={language === 'fr' ? 'Switch to English' : 'Passer en Français'}
           >
             <Languages size={20} />
           </button>
@@ -100,7 +100,7 @@ const Header = () => {
           <button
             onClick={toggleLanguage}
             className="p-2 mr-2 rounded-full bg-slate-200 dark:bg-slate-700 text-slate-700 dark:text-slate-200"
-            aria-label="Changer la langue"
+            aria-label={language === 'fr' ? 'Switch to English' : 'Passer en Français'}
           >
             <Languages size={20} />
           </button>

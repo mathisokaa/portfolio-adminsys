@@ -30,22 +30,53 @@ const translations = {
     'home.cta.ready': 'Prêt à optimiser votre infrastructure IT ?',
     'home.cta.discuss': 'Discutons de la façon dont mon expertise peut aider votre entreprise à prospérer dans le paysage numérique actuel.',
     
-    // Skills
-    'skills.title': 'Compétences Techniques',
+    // Projects
+    'projects.title': 'Mes Projets',
+    'projects.subtitle': 'Découvrez mes réalisations en administration système et réseau',
+    'projects.viewDetails': 'Voir les détails',
+    'projects.allProjects': 'Tous les projets',
+    'projects.categories': 'Catégories',
+    'projects.noProjects': 'Aucun projet trouvé dans cette catégorie.',
+    'projects.resetFilters': 'Réinitialiser les filtres',
     
-    // Services
-    'services.serverManagement': 'Gestion de Serveurs',
-    'services.serverManagementDesc': 'Gestion experte des serveurs Windows et Linux, assurant performance et fiabilité optimales.',
-    'services.networkInfra': 'Infrastructure Réseau',
-    'services.networkInfraDesc': 'Conception, implémentation et maintenance d\'infrastructures réseau robustes.',
-    'services.security': 'Solutions de Sécurité',
-    'services.securityDesc': 'Solutions de sécurité complètes pour protéger vos systèmes et données contre les menaces.',
-    'services.dataManagement': 'Gestion des Données',
-    'services.dataManagementDesc': 'Solutions efficaces de gestion des données, incluant sauvegarde, récupération et optimisation du stockage.',
-    'services.monitoring': 'Surveillance Système',
-    'services.monitoringDesc': 'Surveillance proactive des systèmes pour prévenir les problèmes avant qu\'ils n\'impactent votre activité.',
-    'services.virtualization': 'Virtualisation',
-    'services.virtualizationDesc': 'Implémentation de solutions de virtualisation pour maximiser l\'efficacité et la flexibilité du matériel.',
+    // Categories
+    'category.networking': 'Réseau',
+    'category.security': 'Sécurité',
+    'category.cloud': 'Cloud',
+    'category.virtualization': 'Virtualisation',
+    'category.automation': 'Automatisation',
+    'category.monitoring': 'Surveillance',
+    'category.optimization': 'Optimisation',
+    
+    // Tech Watch
+    'techWatch.title': 'Veille Technologique',
+    'techWatch.subtitle': 'Restez informé des dernières tendances en administration système et réseau',
+    'techWatch.searchPlaceholder': 'Rechercher des articles...',
+    'techWatch.readMore': 'Lire la suite',
+    'techWatch.backToList': 'Retour à la liste',
+    'techWatch.relatedArticles': 'Articles connexes',
+    'techWatch.noArticles': 'Aucun article trouvé.',
+    
+    // Contact
+    'contact.title': 'Contact',
+    'contact.subtitle': 'Discutons de vos besoins en infrastructure IT',
+    'contact.form.name': 'Nom',
+    'contact.form.email': 'Email',
+    'contact.form.subject': 'Sujet',
+    'contact.form.message': 'Message',
+    'contact.form.send': 'Envoyer',
+    'contact.form.sending': 'Envoi en cours...',
+    'contact.form.success': 'Merci pour votre message ! Je vous répondrai dans les plus brefs délais.',
+    'contact.info.title': 'Informations de contact',
+    'contact.info.email': 'Email',
+    'contact.info.phone': 'Téléphone',
+    'contact.info.location': 'Localisation',
+    'contact.businessHours': 'Horaires d\'ouverture',
+    'contact.businessHours.weekdays': 'Lundi - Vendredi',
+    'contact.businessHours.saturday': 'Samedi',
+    'contact.businessHours.sunday': 'Dimanche',
+    'contact.businessHours.appointment': 'Sur rendez-vous',
+    'contact.businessHours.closed': 'Fermé'
   },
   en: {
     // Navigation
@@ -68,22 +99,53 @@ const translations = {
     'home.cta.ready': 'Ready to optimize your IT infrastructure?',
     'home.cta.discuss': 'Let\'s discuss how my expertise can help your business thrive in today\'s digital landscape.',
     
-    // Skills
-    'skills.title': 'Technical Skills',
+    // Projects
+    'projects.title': 'My Projects',
+    'projects.subtitle': 'Explore my system and network administration achievements',
+    'projects.viewDetails': 'View Details',
+    'projects.allProjects': 'All Projects',
+    'projects.categories': 'Categories',
+    'projects.noProjects': 'No projects found in this category.',
+    'projects.resetFilters': 'Reset Filters',
     
-    // Services
-    'services.serverManagement': 'Server Management',
-    'services.serverManagementDesc': 'Expert management of Windows and Linux servers, ensuring optimal performance and reliability.',
-    'services.networkInfra': 'Network Infrastructure',
-    'services.networkInfraDesc': 'Design, implementation, and maintenance of robust network infrastructures.',
-    'services.security': 'Security Solutions',
-    'services.securityDesc': 'Comprehensive security solutions to protect your systems and data from threats.',
-    'services.dataManagement': 'Data Management',
-    'services.dataManagementDesc': 'Efficient data management solutions, including backup, recovery, and storage optimization.',
-    'services.monitoring': 'System Monitoring',
-    'services.monitoringDesc': 'Proactive monitoring of systems to prevent issues before they impact your business.',
-    'services.virtualization': 'Virtualization',
-    'services.virtualizationDesc': 'Implementation of virtualization solutions to maximize hardware efficiency and flexibility.',
+    // Categories
+    'category.networking': 'Networking',
+    'category.security': 'Security',
+    'category.cloud': 'Cloud',
+    'category.virtualization': 'Virtualization',
+    'category.automation': 'Automation',
+    'category.monitoring': 'Monitoring',
+    'category.optimization': 'Optimization',
+    
+    // Tech Watch
+    'techWatch.title': 'Tech Watch',
+    'techWatch.subtitle': 'Stay informed about the latest trends in system and network administration',
+    'techWatch.searchPlaceholder': 'Search articles...',
+    'techWatch.readMore': 'Read More',
+    'techWatch.backToList': 'Back to List',
+    'techWatch.relatedArticles': 'Related Articles',
+    'techWatch.noArticles': 'No articles found.',
+    
+    // Contact
+    'contact.title': 'Contact',
+    'contact.subtitle': 'Let\'s discuss your IT infrastructure needs',
+    'contact.form.name': 'Name',
+    'contact.form.email': 'Email',
+    'contact.form.subject': 'Subject',
+    'contact.form.message': 'Message',
+    'contact.form.send': 'Send',
+    'contact.form.sending': 'Sending...',
+    'contact.form.success': 'Thank you for your message! I\'ll get back to you as soon as possible.',
+    'contact.info.title': 'Contact Information',
+    'contact.info.email': 'Email',
+    'contact.info.phone': 'Phone',
+    'contact.info.location': 'Location',
+    'contact.businessHours': 'Business Hours',
+    'contact.businessHours.weekdays': 'Monday - Friday',
+    'contact.businessHours.saturday': 'Saturday',
+    'contact.businessHours.sunday': 'Sunday',
+    'contact.businessHours.appointment': 'By appointment',
+    'contact.businessHours.closed': 'Closed'
   }
 };
 
