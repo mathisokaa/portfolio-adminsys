@@ -24,51 +24,63 @@ const Projects = () => {
   const projects: Project[] = [
     {
       id: 1,
-      title: 'Enterprise Network Overhaul',
-      description: 'Complete redesign and implementation of network infrastructure for a 500+ employee company, including routing, switching, and security enhancements.',
+      title: language === 'fr' ? 'Refonte Réseau d\'Entreprise' : 'Enterprise Network Overhaul',
+      description: language === 'fr' 
+        ? 'Refonte complète et implémentation de l\'infrastructure réseau pour une entreprise de 500+ employés, incluant routage, commutation et améliorations de sécurité.'
+        : 'Complete redesign and implementation of network infrastructure for a 500+ employee company, including routing, switching, and security enhancements.',
       image: 'https://images.pexels.com/photos/2881229/pexels-photo-2881229.jpeg',
       category: ['networking', 'security'],
-      date: 'June 2023'
+      date: language === 'fr' ? 'Juin 2023' : 'June 2023'
     },
     {
       id: 2,
-      title: 'Cloud Migration Project',
-      description: 'Migration of on-premises infrastructure to AWS, including server virtualization, storage solutions, and implementing a hybrid cloud architecture.',
+      title: language === 'fr' ? 'Projet de Migration Cloud' : 'Cloud Migration Project',
+      description: language === 'fr'
+        ? 'Migration de l\'infrastructure sur site vers AWS, incluant la virtualisation des serveurs, les solutions de stockage et l\'implémentation d\'une architecture cloud hybride.'
+        : 'Migration of on-premises infrastructure to AWS, including server virtualization, storage solutions, and implementing a hybrid cloud architecture.',
       image: 'https://images.pexels.com/photos/325229/pexels-photo-325229.jpeg',
       category: ['cloud', 'virtualization'],
-      date: 'March 2023'
+      date: language === 'fr' ? 'Mars 2023' : 'March 2023'
     },
     {
       id: 3,
-      title: 'Automated Backup System',
-      description: 'Development of an automated backup and disaster recovery system using scripts and cloud storage, ensuring business continuity and data protection.',
+      title: language === 'fr' ? 'Système de Sauvegarde Automatisé' : 'Automated Backup System',
+      description: language === 'fr'
+        ? 'Développement d\'un système de sauvegarde automatisé et de récupération après sinistre utilisant des scripts et le stockage cloud, assurant la continuité d\'activité et la protection des données.'
+        : 'Development of an automated backup and disaster recovery system using scripts and cloud storage, ensuring business continuity and data protection.',
       image: 'https://images.pexels.com/photos/7516363/pexels-photo-7516363.jpeg',
       category: ['automation', 'security'],
-      date: 'November 2022'
+      date: language === 'fr' ? 'Novembre 2022' : 'November 2022'
     },
     {
       id: 4,
-      title: 'Security Infrastructure Enhancement',
-      description: 'Implementation of comprehensive security measures including firewall configuration, intrusion detection systems, and employee security training.',
+      title: language === 'fr' ? 'Amélioration Infrastructure Sécurité' : 'Security Infrastructure Enhancement',
+      description: language === 'fr'
+        ? 'Implémentation de mesures de sécurité complètes incluant la configuration de pare-feu, les systèmes de détection d\'intrusion et la formation sécurité des employés.'
+        : 'Implementation of comprehensive security measures including firewall configuration, intrusion detection systems, and employee security training.',
       image: 'https://images.pexels.com/photos/60504/security-protection-anti-virus-software-60504.jpeg',
       category: ['security'],
-      date: 'August 2022'
+      date: language === 'fr' ? 'Août 2022' : 'August 2022'
     },
     {
       id: 5,
-      title: 'Virtualization Infrastructure',
-      description: 'Design and deployment of VMware virtualization environment, resulting in 40% reduction in hardware costs and improved resource utilization.',
+      title: language === 'fr' ? 'Infrastructure de Virtualisation' : 'Virtualization Infrastructure',
+      description: language === 'fr'
+        ? 'Conception et déploiement d\'un environnement de virtualisation VMware, résultant en une réduction de 40% des coûts matériels et une amélioration de l\'utilisation des ressources.'
+        : 'Design and deployment of VMware virtualization environment, resulting in 40% reduction in hardware costs and improved resource utilization.',
       image: 'https://images.pexels.com/photos/1181354/pexels-photo-1181354.jpeg',
       category: ['virtualization', 'optimization'],
-      date: 'May 2022'
+      date: language === 'fr' ? 'Mai 2022' : 'May 2022'
     },
     {
       id: 6,
-      title: 'Server Monitoring System',
-      description: 'Implementation of comprehensive monitoring solution using open-source tools to provide real-time insights into server performance and health.',
+      title: language === 'fr' ? 'Système de Surveillance Serveur' : 'Server Monitoring System',
+      description: language === 'fr'
+        ? 'Implémentation d\'une solution de surveillance complète utilisant des outils open-source pour fournir des informations en temps réel sur les performances et la santé des serveurs.'
+        : 'Implementation of comprehensive monitoring solution using open-source tools to provide real-time insights into server performance and health.',
       image: 'https://images.pexels.com/photos/325229/pexels-photo-325229.jpeg',
       category: ['monitoring', 'automation'],
-      date: 'February 2022'
+      date: language === 'fr' ? 'Février 2022' : 'February 2022'
     }
   ];
   

@@ -76,7 +76,24 @@ const translations = {
     'contact.businessHours.saturday': 'Samedi',
     'contact.businessHours.sunday': 'Dimanche',
     'contact.businessHours.appointment': 'Sur rendez-vous',
-    'contact.businessHours.closed': 'Fermé'
+    'contact.businessHours.closed': 'Fermé',
+    
+    // Services
+    'services.serverManagement': 'Gestion de Serveurs',
+    'services.serverManagementDesc': 'Administration complète des serveurs Windows et Linux, maintenance, optimisation des performances et gestion des mises à jour.',
+    'services.networkInfra': 'Infrastructure Réseau',
+    'services.networkInfraDesc': 'Conception, déploiement et maintenance d\'infrastructures réseau robustes avec routage, commutation et sécurité avancée.',
+    'services.security': 'Sécurité IT',
+    'services.securityDesc': 'Mise en place de solutions de sécurité complètes incluant pare-feu, détection d\'intrusion et politiques de sécurité.',
+    'services.dataManagement': 'Gestion des Données',
+    'services.dataManagementDesc': 'Solutions de sauvegarde, récupération après sinistre et gestion des bases de données pour assurer la continuité d\'activité.',
+    'services.monitoring': 'Surveillance Système',
+    'services.monitoringDesc': 'Surveillance proactive des systèmes et réseaux avec alertes en temps réel et rapports de performance détaillés.',
+    'services.virtualization': 'Virtualisation',
+    'services.virtualizationDesc': 'Déploiement et gestion d\'environnements virtualisés pour optimiser l\'utilisation des ressources et réduire les coûts.',
+    
+    // Skills
+    'skills.title': 'Compétences Techniques'
   },
   en: {
     // Navigation
@@ -145,7 +162,24 @@ const translations = {
     'contact.businessHours.saturday': 'Saturday',
     'contact.businessHours.sunday': 'Sunday',
     'contact.businessHours.appointment': 'By appointment',
-    'contact.businessHours.closed': 'Closed'
+    'contact.businessHours.closed': 'Closed',
+    
+    // Services
+    'services.serverManagement': 'Server Management',
+    'services.serverManagementDesc': 'Complete administration of Windows and Linux servers, maintenance, performance optimization, and update management.',
+    'services.networkInfra': 'Network Infrastructure',
+    'services.networkInfraDesc': 'Design, deployment, and maintenance of robust network infrastructures with advanced routing, switching, and security.',
+    'services.security': 'IT Security',
+    'services.securityDesc': 'Implementation of comprehensive security solutions including firewalls, intrusion detection, and security policies.',
+    'services.dataManagement': 'Data Management',
+    'services.dataManagementDesc': 'Backup solutions, disaster recovery, and database management to ensure business continuity.',
+    'services.monitoring': 'System Monitoring',
+    'services.monitoringDesc': 'Proactive system and network monitoring with real-time alerts and detailed performance reports.',
+    'services.virtualization': 'Virtualization',
+    'services.virtualizationDesc': 'Deployment and management of virtualized environments to optimize resource utilization and reduce costs.',
+    
+    // Skills
+    'skills.title': 'Technical Skills'
   }
 };
 
