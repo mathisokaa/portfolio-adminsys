@@ -19,7 +19,7 @@ interface Project {
 
 const Projects = () => {
   const [filter, setFilter] = useState<string>('all');
-  const { t } = useLanguage();
+  const { t, language } = useLanguage();
   
   const projects: Project[] = [
     {
